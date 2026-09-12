@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="RAKSHAK - National Disaster Rescue and Response System">
+
+    <title>RAKSHAK | National Disaster Response System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="brand">
+
+        <div class="brand-logo">
+            🛡️
+        </div>
+
+        <div>
+            <div class="brand-name">
+                RAKSHAK
+            </div>
+
+            <div class="brand-subtitle">
+                NATIONAL DISASTER RESPONSE SYSTEM
+            </div>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="#home">Home</a>
+        <a href="#citizen">Citizen Portal</a>
+        <a href="#command">Command Center</a>
+
+    </nav>
+
+    <div class="system-online">
+        <span class="online-dot"></span>
+        SYSTEM ONLINE
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section id="home" class="hero">
+
+    <div class="hero-content">
+
+        <div class="government-label">
+            GOVERNMENT EMERGENCY RESPONSE PROTOTYPE
+        </div>
+
+        <h1>
+            Every Signal.
+            <br>
+            <span>Can Save a Life.</span>
+        </h1>
+
+        <p>
+            RAKSHAK connects disaster survivors with emergency
+            response authorities through real-time location,
+            emergency alerts and intelligent rescue prioritization.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button
+                class="btn btn-danger"
+                onclick="openCitizen()">
+
+                🆘 I NEED HELP
+
+            </button>
+
+            <button
+                class="btn btn-dark"
+                onclick="openGovernment()">
+
+                🏛️ COMMAND CENTER
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- RADAR -->
+
+    <div class="radar-container">
+
+        <div class="radar">
+
+            <div class="radar-ring ring1"></div>
+            <div class="radar-ring ring2"></div>
+            <div class="radar-ring ring3"></div>
+
+            <div class="radar-center">
+                🛡️
+            </div>
+
+            <div class="radar-point point1"></div>
+            <div class="radar-point point2"></div>
+            <div class="radar-point point3"></div>
+            <div class="radar-point point4"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= HOW IT WORKS ================= -->
+
+<section class="how-section">
+
+    <div class="section-title">
+
+        <span>
+            HOW RAKSHAK WORKS
+        </span>
+
+        <h2>
+            From distress signal to rescue.
+        </h2>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">
+                📍
+            </div>
+
+            <h3>
+                Locate
+            </h3>
+
+            <p>
+                Capture the survivor's location and
+                transmit it to emergency authorities.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon green">
+                ❤️
+            </div>
+
+            <h3>
+                Verify
+            </h3>
+
+            <p>
+                Survivors can confirm that they are alive
+                and communicate their emergency condition.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon orange">
+                📡
+            </div>
+
+            <h3>
+                Alert
+            </h3>
+
+            <p>
+                Authorities receive real-time emergency
+                alerts and survivor status updates.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon red">
+                🚁
+            </div>
+
+            <h3>
+                Rescue
+            </h3>
+
+            <p>
+                Intelligent prioritization helps responders
+                determine who needs help first.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CITIZEN PORTAL ================= -->
+
+<section id="citizen" class="citizen-section">
+
+    <div class="page-heading">
+
+        <div class="government-label">
+            CITIZEN EMERGENCY PORTAL
+        </div>
+
+        <h2>
+            Stay connected.
+            <br>
+            <span>Help is listening.</span>
+        </h2>
+
+        <p>
+            If you are trapped during a disaster,
+            notify emergency authorities immediately.
+        </p>
+
+    </div>
+
+
+    <div class="citizen-grid">
+
+
+        <!-- ALIVE -->
+
+        <div class="citizen-card alive-card">
+
+            <div class="large-icon green-circle">
+                ❤️
+            </div>
+
+            <h2>
+                Are you alive?
+            </h2>
+
+            <p>
+                Confirm your status so rescue authorities
+                know that you are still waiting for assistance.
+            </p>
+
+            <button
+                class="alive-button"
+                onclick="confirmAlive()">
+
+                ❤️ I AM ALIVE
+
+            </button>
+
+            <div
+                id="aliveMessage"
+                class="success-message hidden">
+
+                ✓ ALIVE STATUS CONFIRMED
+
+                <small>
+                    Your signal has been received by
+                    the emergency command center.
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- SOS -->
+
+        <div class="citizen-card sos-card">
+
+            <div class="sos-title">
+                🚨 EMERGENCY
+            </div>
+
+            <h2>
+                Need immediate rescue?
+            </h2>
+
+            <p>
+                Send an emergency SOS to the command center.
+            </p>
+
+            <button
+                class="sos-button"
+                onclick="sendSOS()">
+
+                SEND SOS
+
+            </button>
+
+            <div
+                id="sosMessage"
+                class="sos-message hidden">
+
+                🚨 EMERGENCY ALERT SENT
+
+                <small>
+                    Rescue authorities have been notified.
+                </small>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- LOCATION -->
+
+    <div class="location-card">
+
+        <div class="location-header">
+
+            <div>
+
+                <h2>
+                    📍 Your Location
+                </h2>
+
+                <p>
+                    Share your GPS coordinates with emergency
+                    authorities.
+                </p>
+
+            </div>
+
+            <div class="location-security">
+                🔒 SECURE
+            </div>
+
+        </div>
+
+
+        <button
+            class="location-button"
+            onclick="getLocation()">
+
+            📍 SHARE MY LOCATION
+
+        </button>
+
+
+        <div
+            id="locationResult"
+            class="location-result hidden">
+
+            <div class="location-icon">
+                📍
+            </div>
+
+            <div>
+
+                <strong>
+                    LOCATION RECEIVED
+                </strong>
+
+                <p id="coordinates">
+                </p>
+
+            </div>
+
+            <div>
+                🛡️
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= GOVERNMENT COMMAND ================= -->
+
+<section id="command" class="command-section">
+
+    <div class="dashboard-header">
+
+        <div>
+
+            <div class="government-label">
+                GOVERNMENT COMMAND CENTER
+            </div>
+
+            <h2>
+                National Emergency Dashboard
+            </h2>
+
+            <p>
+                Real-time disaster response and survivor monitoring.
+            </p>
+
+        </div>
+
+        <div class="dashboard-status">
+            ● ALL SYSTEMS OPERATIONAL
+        </div>
+
+    </div>
+
+
+    <!-- STATISTICS -->
+
+    <div class="stats-grid">
+
+        <div class="stat-card">
+
+            <div class="stat-title">
+                ACTIVE DISASTERS
+                <span>⚠️</span>
+            </div>
+
+            <div class="stat-number">
+                04
+            </div>
+
+            <div class="stat-description">
+                Across monitored regions
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-title">
+                SURVIVORS
+                <span>👥</span>
+            </div>
+
+            <div class="stat-number">
+                1,284
+            </div>
+
+            <div class="stat-description">
+                +84 in the last hour
+            </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <div class="stat-title">
+                CONFIRMED ALIVE
+                <span>❤️</span>
+            </div>
+
+            <div class="stat-number green-text">
+                913
+            </div>
+
+            <div class="stat-description">
+                71.1% of reported survivors
+            </div>
+
+        </div>
+
+
+        <div class="stat-card critical-stat">
+
+            <div class="stat-title">
+                CRITICAL
+                <span>🚨</span>
+            </div>
+
+            <div class="stat-number red-text">
+                127
+            </div>
+
+            <div class="stat-description">
+                Require immediate action
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAP + ALERTS -->
+
+    <div class="dashboard-grid">
+
+
+        <!-- MAP -->
+
+        <div class="map-card">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <h3>
+                        Live Rescue Map
+                    </h3>
+
+                    <p>
+                        Active survivor locations
+                    </p>
+
+                </div>
+
+                <span class="live-label">
+                    ● LIVE
+                </span>
+
+            </div>
+
+
+            <div class="map">
+
+                <div class="map-grid"></div>
+
+                <div class="city city1">
+                    KOLKATA
+                </div>
+
+                <div class="city city2">
+                    HOWRAH
+                </div>
+
+                <div class="city city3">
+                    DURGAPUR
+                </div>
+
+                <div
+                    class="map-marker critical"
+                    style="left:25%;top:35%;">
+
+                    📍
+
+                </div>
+
+                <div
+                    class="map-marker"
+                    style="left:52%;top:48%;">
+
+                    📍
+
+                </div>
+
+                <div
+                    class="map-marker critical"
+                    style="left:70%;top:27%;">
+
+                    📍
+
+                </div>
+
+                <div
+                    class="map-marker"
+                    style="left:45%;top:72%;">
+
+                    📍
+
+                </div>
+
+                <div
+                    class="map-marker"
+                    style="left:80%;top:65%;">
+
+                    📍
+
+                </div>
+
+            </div>
+
+
+            <div class="map-legend">
+
+                <span>
+                    <i class="dot critical-dot"></i>
+                    Critical
+                </span>
+
+                <span>
+                    <i class="dot high-dot"></i>
+                    High Priority
+                </span>
+
+                <span>
+                    <i class="dot stable-dot"></i>
+                    Stable
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- ALERTS -->
+
+        <div class="alerts-card">
+
+            <div class="panel-heading">
+
+                <div>
+
+                    <h3>
+                        Emergency Alerts
+                    </h3>
+
+                    <p>
+                        Real-time survivor communications
+                    </p>
+
+                </div>
+
+                📡
+
+            </div>
+
+
+            <div class="alert danger-alert">
+
+                <div>
+                    🚨
+                </div>
+
+                <div>
+
+                    <strong>
+                        CRITICAL SURVIVOR
+                    </strong>
+
+                    <p>
+                        IND-28491 reports severe injury.
+                    </p>
+
+                    <small>
+                        12 seconds ago
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="alert success-alert">
+
+                <div>
+                    ✓
+                </div>
+
+                <div>
+
+                    <strong>
+                        ALIVE CONFIRMATION
+                    </strong>
+
+                    <p>
+                        IND-19372 confirmed they are alive.
+                    </p>
+
+                    <small>
+                        38 seconds ago
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="alert danger-alert">
+
+                <div>
+                    🚨
+                </div>
+
+                <div>
+
+                    <strong>
+                        NEW SOS
+                    </strong>
+
+                    <p>
+                        Emergency signal received from Durgapur.
+                    </p>
+
+                    <small>
+                        1 minute ago
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- RESCUE PRIORITY -->
+
+    <div class="priority-section">
+
+        <div class="priority-header">
+
+            <div>
+
+                <span>
+                    AI-ASSISTED PRIORITIZATION
+                </span>
+
+                <h2>
+                    Rescue Priority Queue
+                </h2>
+
+            </div>
+
+            <p>
+                🛡️ Priority is calculated using medical condition,
+                location risk, time trapped and survivor status.
+            </p>
+
+        </div>
+
+
+        <div class="survivor-grid">
+
+
+            <!-- PERSON 1 -->
+
+            <div class="survivor-card">
+
+                <div class="survivor-top">
+
+                    <div>
+
+                        <h3>
+                            IND-28491
+                        </h3>
+
+                        <span class="alive-status">
+                            ● ALIVE
+                        </span>
+
+                    </div>
+
+                    <div class="priority-score">
+
+                        <strong>
+                            97
+                        </strong>
+
+                        <small>
+                            PRIORITY
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="survivor-details">
+
+                    <p>
+                        📍 Sector 14, Kolkata
+                    </p>
+
+                    <p>
+                        ❤️ Severe injury
+                    </p>
+
+                    <p>
+                        🔋 Battery 18%
+                    </p>
+
+                    <p>
+                        🕐 12 sec ago
+                    </p>
+
+                </div>
+
+
+                <button
+                    onclick="dispatchTeam('IND-28491')"
+                    class="dispatch-button">
+
+                    DISPATCH RESCUE TEAM
+
+                </button>
+
+            </div>
+
+
+            <!-- PERSON 2 -->
+
+            <div class="survivor-card">
+
+                <div class="survivor-top">
+
+                    <div>
+
+                        <h3>
+                            IND-19372
+                        </h3>
+
+                        <span class="alive-status">
+                            ● ALIVE
+                        </span>
+
+                    </div>
+
+                    <div class="priority-score">
+
+                        <strong>
+                            91
+                        </strong>
+
+                        <small>
+                            PRIORITY
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="survivor-details">
+
+                    <p>
+                        📍 Howrah Riverside
+                    </p>
+
+                    <p>
+                        ❤️ Trapped
+                    </p>
+
+                    <p>
+                        🔋 Battery 24%
+                    </p>
+
+                    <p>
+                        🕐 38 sec ago
+                    </p>
+
+                </div>
+
+
+                <button
+                    onclick="dispatchTeam('IND-19372')"
+                    class="dispatch-button">
+
+                    DISPATCH RESCUE TEAM
+
+                </button>
+
+            </div>
+
+
+            <!-- PERSON 3 -->
+
+            <div class="survivor-card">
+
+                <div class="survivor-top">
+
+                    <div>
+
+                        <h3>
+                            IND-82731
+                        </h3>
+
+                        <span class="alive-status">
+                            ● ALIVE
+                        </span>
+
+                    </div>
+
+                    <div class="priority-score orange">
+                        <strong>
+                            78
+                        </strong>
+
+                        <small>
+                            PRIORITY
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="survivor-details">
+
+                    <p>
+                        📍 Durgapur
+                    </p>
+
+                    <p>
+                        ❤️ Needs assistance
+                    </p>
+
+                    <p>
+                        🔋 Battery 56%
+                    </p>
+
+                    <p>
+                        🕐 1 min ago
+                    </p>
+
+                </div>
+
+
+                <button
+                    onclick="dispatchTeam('IND-82731')"
+                    class="dispatch-button">
+
+                    DISPATCH RESCUE TEAM
+
+                </button>
+
+            </div>
+
+
+            <!-- PERSON 4 -->
+
+            <div class="survivor-card">
+
+                <div class="survivor-top">
+
+                    <div>
+
+                        <h3>
+                            IND-49102
+                        </h3>
+
+                        <span class="alive-status">
+                            ● ALIVE
+                        </span>
+
+                    </div>
+
+                    <div class="priority-score green">
+                        <strong>
+                            54
+                        </strong>
+
+                        <small>
+                            PRIORITY
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <div class="survivor-details">
+
+                    <p>
+                        📍 Bardhaman
+                    </p>
+
+                    <p>
+                        ❤️ Stable
+                    </p>
+
+                    <p>
+                        🔋 Battery 72%
+                    </p>
+
+                    <p>
+                        🕐 2 min ago
+                    </p>
+
+                </div>
+
+
+                <button
+                    onclick="dispatchTeam('IND-49102')"
+                    class="dispatch-button">
+
+                    DISPATCH RESCUE TEAM
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-brand">
+
+        🛡️ RAKSHAK
+
+    </div>
+
+    <p>
+        National Disaster Rescue & Response System
+    </p>
+
+    <small>
+        Prototype developed for hackathon demonstration.
+        Not an official Government of India service.
+    </small>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
